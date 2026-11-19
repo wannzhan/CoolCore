@@ -6,11 +6,12 @@
         android:icon="@drawable/ic_launcher_coolcore"
         android:label="冷核 CoolCore"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoolCore.Dark">
+        android:theme="@style/Theme.CoolCore">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
